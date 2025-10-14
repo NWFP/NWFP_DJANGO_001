@@ -1,11 +1,11 @@
-# .env
-# Pipfile
-# manage.prod.py
-# manage.dev.py
-# db.sqlite3
-# __pycache__
-# .vscode/
-# static/
-# media/
-# node_modules/
-# *.log
+.env
+Pipfile
+manage.prod.py
+manage.dev.py
+db.sqlite3
+__pycache__
+.vscode/
+static/
+media/
+node_modules/
+*.log
