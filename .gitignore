@@ -1,2 +1,11 @@
 .env
 Pipfile
+manage.prod.py
+manage.dev.py
+db.sqlite3
+__pycache__/
+.devdbrc
+.vscode/
+static/
+media/
+core/migrations/
