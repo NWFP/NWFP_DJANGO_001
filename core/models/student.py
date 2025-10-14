@@ -6,5 +6,6 @@ class Student(models.Model):
     organisation = models.CharField(max_length = 255)
     project_title = models.CharField(max_length=255)
     
+
     class Meta:
-        verbose_name_plural = "Student name"
+        verbose_name_plural = "Students"

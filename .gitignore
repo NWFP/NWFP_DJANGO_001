@@ -3,9 +3,9 @@ Pipfile
 manage.prod.py
 manage.dev.py
 db.sqlite3
-__pycache__/
-.devdbrc
+__pycache__
 .vscode/
 static/
 media/
-core/migrations/
+node_modules/
+*.log
