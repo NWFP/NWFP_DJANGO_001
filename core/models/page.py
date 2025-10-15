@@ -12,7 +12,7 @@ class Page(IdModel):
     landing_page = models.CharField(max_length=10,choices=[('Yes','Yes'),('No','No')],default='No')
     description = models.TextField(max_length = 200, blank=True)
     activation_date = models.DateField(default=timezone.now) # Activation date
-    deactivation_date = models.DateField(null=True) # Deactivation date
+    deactivation_date = models.DateField(null=True, blank=True) # Deactivation date
     
     class Meta:
         verbose_name_plural = "Pages"

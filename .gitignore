@@ -2,6 +2,7 @@
 Pipfile
 manage.prod.py
 manage.dev.py
+manage.stage.py
 db.sqlite3
 __pycache__
 .vscode/

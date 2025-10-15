@@ -1,7 +1,7 @@
 from django.contrib import admin
 from core.models.page import Page
 from core.models.student import Student
-
+from core.models.team import Team
 
 @admin.register(Page)
 class PageAdmin(admin.ModelAdmin):
@@ -18,6 +18,9 @@ class PageAdmin(admin.ModelAdmin):
 class StudentAdmin(admin.ModelAdmin):
     list_display = ('id','name','organisation','project_title')
 
+@admin.register(Team)
+class TeamAdmin(admin.ModelAdmin):
+    list_display = ('name','team_type','work_package','image','staff_link', 'activation_date', 'deactivation_date')
 
 
 

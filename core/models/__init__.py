@@ -13,3 +13,8 @@ from core.models.publication import Publication
 __all__ = [
      Publication
  ]
+
+from core.models.team import Team
+__all__ = [
+    Team
+]
