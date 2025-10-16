@@ -36,13 +36,14 @@ class ThemeAdmin(admin.ModelAdmin):
 
 @admin.register(Testimony)
 class TestimonyAdmin(admin.ModelAdmin):
-    list_display = ('title','student','urls','youtube_code')
+    list_display = ('title','student','url','youtube_code')
 
 
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
     list_display = ('id','name','organisation','project')
-    #autocomplete_fields = ('projects',)
+    list_display = ('name', 'project',)
+    list_filter = ('project',)
     
 
 @admin.register(Project)

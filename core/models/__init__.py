@@ -42,3 +42,8 @@ from core.models.project import Project
 __all__ = [
     Project
 ]
+
+from core.models.testimony import Testimony
+__all__ = [
+    Testimony
+]
