@@ -26,5 +26,6 @@ class Team(IdModel):
     activation_date = models.DateField(default=timezone.now) # Activation date
     deactivation_date = models.DateField(null=True, blank=True) # Deactivation date
     #biography = RichTextField(max_length=1000,blank=True)
+    
     class Meta:
         verbose_name_plural = "Team Members"

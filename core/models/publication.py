@@ -18,5 +18,8 @@ class Publication(models.Model):
     image = models.URLField(blank=True)
     issue_date = models.DateField(blank=True, null=True)
 
+    class Meta:
+        verbose_name_plural = "Publications"
+
     def __str__(self):
         return f"{self.title} ({self.get_ref_type_display()}, {self.pub_year})"

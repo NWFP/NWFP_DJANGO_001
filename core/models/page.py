@@ -17,5 +17,5 @@ class Page(IdModel):
     class Meta:
         verbose_name_plural = "Pages"
 
-    # def __str__(self):
-    #     return self.name + " - " + self.title + " - " + self.status
+    def __str__(self):
+        return self.template_name + " - " + self.title + " - " + self.status
